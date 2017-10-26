@@ -39,20 +39,10 @@ function letter() {
     for (var i = 0; i < chosenWord.length; i ++) {
       if (chosenWord[i] === letter) {
         answerArray[i] = letter;
-        document.write('Correct guess')
       }
-    } 
+    }
   }
+    count++;
     document.getElementById("counter").innerHTML = "Number of clicks: " + count;
     document.getElementById("answer").innerHTML = answerArray.join(" ");
-  }
-
-function incorrectGuess(){
-
-  if (chosenWord[i] !== letter) {
-    count++;
-    document.write('Incorrect guess')
-    }
-  if(count>5) {
-    document.getElementById("stat").innerHTML = "You should have guessed it by now! You're dead!";
   }

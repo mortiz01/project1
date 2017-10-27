@@ -1,2 +1,5 @@
-# project1
-Repository for Project 1
+This README is commited to explaining my process for developing this simple Hangman game.
+
+My process was very straightforward. I initially started with the JavaScript file. My plan was to have a functional version of the game with all the code working before styling. I wasn't sure how to do the animated hangman part so I decided that, in terms of MVP, the graphic design was not necessary. I did each part piece by piece, asking myself: Is this working? I followed this process before moving on, i.e. I made sure the click events were working before writing a function to check whether a guessed letter was in the secret word. After that, once the parts were functional, I attempted to connect them. This took the most time, as changing one thing would often affect the rest of the output. However, with effort and help from Zakk & Perry, I was able to complete this portion. Designing the HTML & CSS was relatively straightforward.
+
+I wish I had been able to figure out how to actually draw the Hangman, but that's tomorrow's task.

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Hangman: Online Game</title>
+  <meta charset="utf-8">
+	<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<div class='wrapper'>
+
+	<h1 id='title'>Hangman</h1>
+  <h2>The rules are simple: Player 1 types in a word. Player 2 will guess that word. You have 5 lives. An incorrect guess is a life. Get to 0, and you lose!</h2>
+
+</div>
+
+<h1>Guess a letter</h1>
+<input id='letter' type='text'>
+<input id='button' type='button' value='Guess'/>
+<input id='button1' type='button' value='Start Over'/>
+
+<div class='textUnder'>
+  <p>Hangman is a classic game, in which a player must guess a secret word, lest his 'hangman' be hanged for failing. The origin of the game is unclear, though it appears as early as 1894, under
+    the name "Birds, Beasts, and Fishes".</p>
+</div> 
+<p id='answer'></p>
+<p id='counter'></p>
+<p id='stat'></p>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+  <script src='script.js'></script>
+</body>
+</html>

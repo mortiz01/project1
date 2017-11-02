@@ -4,30 +4,35 @@
 	<title>Hangman: Online Game</title>
   <meta charset="utf-8">
 	<link rel='stylesheet' href='style.css'>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+	<!-- Put outside scripts in the head of your html file -->
 </head>
 <body>
-<div class='wrapper'>
+	<!-- I'd go ahead and indent the content of the body tag over one line to make the nesting more clear -->
+	<div class='wrapper'>
+		<!-- class = wrapper is ok, try using a <header> element to be even more symantic -->
+		<h1 id='title'>Hangman</h1>
+	  <h2>The rules are simple: Player 1 types in a word. Player 2 will guess that word. You have 5 lives. An incorrect guess is a life. Get to 0, and you lose!</h2>
 
-	<h1 id='title'>Hangman</h1>
-  <h2>The rules are simple: Player 1 types in a word. Player 2 will guess that word. You have 5 lives. An incorrect guess is a life. Get to 0, and you lose!</h2>
+	</div>
 
-</div>
+	<h1>Guess a letter</h1>
+	<input id='letter' type='text'>
+	<input id='button' type='button' value='Guess'/>
+	<input id='button1' type='button' value='Start Over'/>
+	<!-- Maybe guess-button or guess-btn instead of just button? Try to be descriptive-->
 
-<h1>Guess a letter</h1>
-<input id='letter' type='text'>
-<input id='button' type='button' value='Guess'/>
-<input id='button1' type='button' value='Start Over'/>
+	<div class='textUnder'>
+		<!-- Generally, use "spine-case" for html/css ids and classes (<div class='text-under'>)
+		Also, it's convention to use double quotes for html/css -->
+	  <p>Hangman is a classic game, in which a player must guess a secret word, lest his 'hangman' be hanged for failing. The origin of the game is unclear, though it appears as early as 1894, under
+	    the name "Birds, Beasts, and Fishes".</p>
+			<!-- Cool bit of history! -->
+	</div>
+	<p id='answer'>HIIII</p>
+	<p id='counter'></p>
+	<p id='stat'></p>
 
-<div class='textUnder'>
-  <p>Hangman is a classic game, in which a player must guess a secret word, lest his 'hangman' be hanged for failing. The origin of the game is unclear, though it appears as early as 1894, under
-    the name "Birds, Beasts, and Fishes".</p>
-</div> 
-<p id='answer'></p>
-<p id='counter'></p>
-<p id='stat'></p>
-
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
   <script src='script.js'></script>
 </body>
 </html>
